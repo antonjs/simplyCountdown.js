@@ -1,18 +1,25 @@
 <html>
   <head>
-    <link rel="stylesheet" href="../css/simplyCountdown.theme.default.css"/>
     <script src="../dist/simplyCountdown.min.js"></script>
     <style>
+      body {
+        background-color: white;
+        color: black;
+      }
+
       .simply-countdown {
         font-family: "Roboto", "Arial", sans-serif;
         font-size: 5em;
         margin: auto;
       }
+
       .simply-countdown > .simply-section {
-          width: auto;
-          height: auto;
-          padding: 0.2em;
-          box-shadow: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        float: left;
+        margin: auto;
+        padding: 0.2em;
       }
 
       .simply-countdown > .simply-section > div {
@@ -21,7 +28,8 @@
 
       .simply-countdown > .simply-section .simply-amount,
       .simply-countdown > .simply-section .simply-word {
-          /* amounts and words */
+        display: block;
+        text-align: center;
       }
 
       .simply-countdown > .simply-section .simply-amount {
@@ -62,7 +70,7 @@
     sectionClass: 'simply-section', //section css class
     amountClass: 'simply-amount', // amount css class
     wordClass: 'simply-word', // word css class
-    zeroPad: false,
+    zeroPad: true,
     countUp: false
   });
 </script>
