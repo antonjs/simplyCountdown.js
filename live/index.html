@@ -11,10 +11,11 @@
         font-family: "Roboto", "Arial", sans-serif;
         font-size: 5em;
         margin: auto;
+        background-color: white;
       }
 
       .simply-countdown > .simply-section {
-        display: flex;
+        /* display: flex; */
         align-items: center;
         justify-content: center;
         float: left;
@@ -43,7 +44,10 @@
     </style>
   </head>
 <body>
-  <div class="simply-countdown" id="countdown"></div>
+  <div class="container">
+    <div class="simply-countdown" id="countdown"></div>
+    <div style="clear: both"></div>
+  </div>
 <script>
   var params = new URLSearchParams(window.location.search);
 
